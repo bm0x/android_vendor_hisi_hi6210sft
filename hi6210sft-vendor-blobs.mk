@@ -79,6 +79,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/firmware,system/vendor/firmware)
 
+# Device Monitor
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/device_monitor_for_nff.conf:system/etc/device_monitor_for_nff.conf \
+        $(LOCAL_PATH)/etc/device_state_monitor.conf:system/etc/device_state_monitor.conf \
+
 # GPS
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/gnss,system/etc/gnss) \
