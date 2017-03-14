@@ -52,3 +52,19 @@ PRODUCT_COPY_FILES += \
 # Binaries
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/bin,system/bin)
+
+# Bluetooth
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib/libbt_factory_test.so:system/lib/libbt_factory_test.so \
+        $(LOCAL_PATH)/lib/libbt_factory_test_hi110x.so:system/lib/libbt_factory_test_hi110x.so \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/libbt_factory_test.so:system/lib64/libbt_factory_test.so \
+        $(LOCAL_PATH)/lib64/libbt_factory_test_hi110x.so:system/lib64/libbt_factory_test_hi110x.so \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
+        $(LOCAL_PATH)/vendor/lib/libbt-vendor-hi110x.so:system/vendor/lib/libbt-vendor-hi110x.so \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/vendor/lib64/libbt-vendor-hi110x.so:system/vendor/lib64/libbt-vendor-hi110x.so \
