@@ -72,3 +72,19 @@ PRODUCT_COPY_FILES += \
 # Connectivities
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/firmware,system/vendor/firmware)
+
+# Sensors
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/lib/hw/sensorcaps.default.so:system/lib/hw/sensorcaps.default.so \
+	$(LOCAL_PATH)/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/lib64/hw/lights.default.so:system/lib64/hw/lights.hi6210sft.so \
+	$(LOCAL_PATH)/lib64/hw/sensorcaps.default.so:system/lib64/hw/sensorcaps.default.so \
+	$(LOCAL_PATH)/lib64/hw/sensors.default.so:system/lib64/hw/sensors.default.so \
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/vendor/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/vendor/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so \
