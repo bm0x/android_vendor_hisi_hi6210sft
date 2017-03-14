@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += \
 # NFC: add Broadcom firmware from Nexus 10 aka "Samsung Manta"
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/vendor/firmware/bcm2079x_firmware.ncd:system/vendor/firmware/bcm2079x_firmware.ncd \
-        $(LOCAL_PATH)/vendor/firmware/bcm2079x_pre_firmware.ncd:system/vendor/ firmware/bcm2079x_pre_firmware.ncd
+        $(LOCAL_PATH)/vendor/firmware/bcm2079x_pre_firmware.ncd:system/vendor/firmware/bcm2079x_pre_firmware.ncd
 
 # RIL
 PRODUCT_COPY_FILES += \
