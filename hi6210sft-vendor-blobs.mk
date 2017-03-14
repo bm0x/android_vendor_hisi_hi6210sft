@@ -84,6 +84,10 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/device_monitor_for_nff.conf:system/etc/device_monitor_for_nff.conf \
         $(LOCAL_PATH)/etc/device_state_monitor.conf:system/etc/device_state_monitor.conf \
 
+# Display
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/permissions/android.hardware.screen.xml:system/etc/permissions/android.hardware.screen.xml \
+
 # GPS
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/gnss,system/etc/gnss) \
