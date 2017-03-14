@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
         $(LOCAL_PATH)/lib/libaudioalgoservice_jni.so:system/lib/libaudioalgoservice_jni.so \
         $(LOCAL_PATH)/lib/libaudio_custom.so:system/lib/libaudio_custom.so \
-        $(LOCAL_PATH)/lib/libaudioflinger.huawei.so:system/lib/libaudioflinger.huawei.so \
+        $(LOCAL_PATH)/lib/libaudioflinger.huawei.so:system/lib/libaudioflinger.hauwei.so \
         $(LOCAL_PATH)/lib/libaudioroute.so:system/lib/libaudioroute.so \
         $(LOCAL_PATH)/lib/libbalong_audio_ril.so:system/lib/libbalong_audio_ril.so \
         $(LOCAL_PATH)/lib/libearpa.so:system/lib/libearpa.so \
@@ -48,3 +48,7 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib64/libsoundtriggerservice.so:system/lib64/libsoundtriggerservice.so \
         $(LOCAL_PATH)/lib64/libswsprocessing.so:system/lib64/libswsprocessing.so \
         $(LOCAL_PATH)/lib64/libtfa9895.so:system/lib64/libtfa9895.so \
+
+# Binaries
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/bin,system/bin)
