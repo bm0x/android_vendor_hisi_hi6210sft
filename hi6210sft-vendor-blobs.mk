@@ -73,6 +73,28 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/firmware,system/vendor/firmware)
 
+# GPS
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/gnss,system/etc/gnss) \
+        $(LOCAL_PATH)/etc/gps.conf:system/etc/gps.conf \
+        $(LOCAL_PATH)/etc/gpsconfig.xml:system/etc/gpsconfig.xml \
+        $(LOCAL_PATH)/etc/gpsconfig_beta.xml:system/etc/gpsconfig_beta.xml \
+        $(LOCAL_PATH)/etc/hisi_cfg.ini:system/etc/hisi_cfg.ini \
+        $(LOCAL_PATH)/etc/hisi_cfg_alice.ini:system/etc/hisi_cfg_alice.ini \
+        $(LOCAL_PATH)/etc/hisi_cfg_cherry.ini:system/etc/hisi_cfg_cherry.ini \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib/hw/gps.hi110x.default.so:system/lib/hw/gps.hi110x.default.so \
+        $(LOCAL_PATH)/lib/libgps_factory_test.so:system/lib/libgps_factory_test.so \
+        $(LOCAL_PATH)/lib/libgps_factory_test_hi110x.so:system/lib/libgps_factory_test_hi110x.so \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/hw/gps.hi110x.default.so:system/lib64/hw/gps.hi110x.default.so \
+        $(LOCAL_PATH)/lib64/hw/gps.hi6210sft.so:system/lib64/hw/gps.hi6210sft.so \
+        $(LOCAL_PATH)/lib64/libexif.so:system/lib64/libexif.so \
+        $(LOCAL_PATH)/lib64/libgps_factory_test.so:system/lib64/libgps_factory_test.so \
+        $(LOCAL_PATH)/lib64/libgps_factory_test_hi110x.so:system/lib64/libgps_factory_test_hi110x.so \
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/usr/keylayout,system/usr/keylayout)
