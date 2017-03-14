@@ -97,3 +97,23 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib64/libsurfaceflinger.so:system/lib64/libsurfaceflinger.so \
         $(LOCAL_PATH)/lib64/libsurfaceflinger_ddmconnection.so:system/lib64/libsurfaceflinger_ddmconnection.so \
+
+# Wifi
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/wifi,system/etc/wifi) \
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/lib/libchrlog.so:system/lib/libchrlog.so \
+	$(LOCAL_PATH)/lib/libhisi_ini.so:system/lib/libhisi_ini.so \
+	$(LOCAL_PATH)/lib/libwifi_factory_test.so:system/lib/libwifi_factory_test.so \
+	$(LOCAL_PATH)/lib/libwifi_factory_test_hi110x.so:system/lib/libwifi_factory_test_hi110x.so \
+	$(LOCAL_PATH)/lib/libwifipro.so:system/lib/libwifipro.so \
+	$(LOCAL_PATH)/lib/libwpa_client_hisi.so:system/lib/libwpa_client_hisi.so \
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/lib64/libchrlog.so:system/lib64/libchrlog.so \
+	$(LOCAL_PATH)/lib64/libhisi_ini.so:system/lib64/libhisi_ini.so \
+	$(LOCAL_PATH)/lib64/libwifi_factory_test.so:system/lib64/libwifi_factory_test.so \
+	$(LOCAL_PATH)/lib64/libwifi_factory_test_hi110x.so:system/lib64/libwifi_factory_test_hi110x.so \
+	$(LOCAL_PATH)/lib64/libwifipro.so:system/lib64/libwifipro.so \
+	$(LOCAL_PATH)/lib64/libwpa_client_hisi.so:system/lib64/libwpa_client_hisi.so \
