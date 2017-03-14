@@ -69,6 +69,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/vendor/lib64/libbt-vendor-hi110x.so:system/vendor/lib64/libbt-vendor-hi110x.so \
 
+# CPU Policy
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/core8_sys_load_policy.xml:system/etc/core8_sys_load_policy.xml \
+        $(LOCAL_PATH)/etc/normal_cpu_policy.xml:system/etc/normal_cpu_policy.xml \
+        $(LOCAL_PATH)/etc/performance_cpu_policy.xml:system/etc/performance_cpu_policy.xml \
+
 # Connectivities
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/firmware,system/vendor/firmware)
