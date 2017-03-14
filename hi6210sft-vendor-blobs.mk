@@ -211,6 +211,10 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/thermald.xml:system/etc/thermald.xml \
         $(LOCAL_PATH)/etc/thermald_performance.xml:system/etc/thermald_performance.xml \
 
+# TP Test Parameters
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/tp_test_parameters,system/etc/tp_test_parameters) \
+
 # Wifi
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/wifi,system/etc/wifi) \
