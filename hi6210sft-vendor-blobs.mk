@@ -111,7 +111,68 @@ PRODUCT_COPY_FILES += \
 # NFC: add Broadcom firmware from Nexus 10 aka "Samsung Manta"
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/vendor/firmware/bcm2079x_firmware.ncd:system/vendor/firmware/bcm2079x_firmware.ncd \
-        $(LOCAL_PATH)/vendor/firmware/bcm2079x_pre_firmware.ncd:system/vendor/ firmware/bcm2079x_pre_firmware.ncd\
+        $(LOCAL_PATH)/vendor/firmware/bcm2079x_pre_firmware.ncd:system/vendor/ firmware/bcm2079x_pre_firmware.ncd
+
+# RIL
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/isp.bin:system/isp.bin
+
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/log,system/etc/log) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/manufacture,system/etc/manufacture) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/modemConfig,system/etc/modemConfig) \
+	$(LOCAL_PATH)/etc/factory_modem.cfg:system/etc/factory_modem.cfg \
+	$(LOCAL_PATH)/etc/kerneldump.sh:system/etc/kerneldump.sh
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/global/ons/net_example.txt:system/global/ons/net_example.txt \
+        $(LOCAL_PATH)/global/ons/ons.bin:system/global/ons/ons.bin \
+        $(LOCAL_PATH)/global/apns-conf.xml:system/global/apns-conf.xml \
+        $(LOCAL_PATH)/global/apns-conf-nolte.xml:system/global/apns-conf-nolte.xml \
+        $(LOCAL_PATH)/global/globalAutoAdapt-conf.xml:system/global/globalAutoAdapt-conf.xml \
+        $(LOCAL_PATH)/global/globalMatchs-conf.xml:system/global/globalMatchs-conf.xml \
+        $(LOCAL_PATH)/global/virtualNets-conf.xml:system/global/virtualNets-conf.xml \
+        $(LOCAL_PATH)/global/virtualNets-conf-nolte.xml:system/global/virtualNets-conf-nolte.xml \
+        $(LOCAL_PATH)/global/voicemail-conf.xml:system/global/voicemail-conf.xml \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib/libaes.so:system/lib/libaes.so \
+        $(LOCAL_PATH)/lib/libagnssal.so:system/lib/libagnssal.so \
+        $(LOCAL_PATH)/lib/libbalong-ril.so:system/lib/libbalong-ril.so \
+        $(LOCAL_PATH)/lib/libbalong-ril-1.so:system/lib/libbalong-ril-1.so \
+        $(LOCAL_PATH)/lib/libgnssadapter.so:system/lib/libgnssadapter.so \
+        $(LOCAL_PATH)/lib/liboeminfo.so:system/lib/liboeminfo.so \
+        $(LOCAL_PATH)/lib/libsupl10client.so:system/lib/libsupl10client.so \
+        $(LOCAL_PATH)/lib/libsupl20client.so:system/lib/libsupl20client.so \
+        $(LOCAL_PATH)/lib/libsupl20comon.so:system/lib/libsupl20comon.so \
+        $(LOCAL_PATH)/lib/libsupl20if.so:system/lib/libsupl20if.so \
+        $(LOCAL_PATH)/lib/libsupl20oasn1comn.so:system/lib/libsupl20oasn1comn.so \
+        $(LOCAL_PATH)/lib/libsupl20oasn1lpp.so:system/lib/libsupl20oasn1lpp.so \
+        $(LOCAL_PATH)/lib/libsupl20oasn1rrc.so:system/lib/libsupl20oasn1rrc.so \
+        $(LOCAL_PATH)/lib/libsupl20oasn1rrlp.so:system/lib/libsupl20oasn1rrlp.so \
+        $(LOCAL_PATH)/lib/libsupl20oasn1rrlpv12.so:system/lib/libsupl20oasn1rrlpv12.so \
+        $(LOCAL_PATH)/lib/libsupl20oasn1supl1.so:system/lib/libsupl20oasn1supl1.so \
+        $(LOCAL_PATH)/lib/libsupl20oasn1supl2.so:system/lib/libsupl20oasn1supl2.so \
+        $(LOCAL_PATH)/lib/libsupl20oasn1tia.so:system/lib/libsupl20oasn1tia.so \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/libaes.so:system/lib64/libaes.so \
+        $(LOCAL_PATH)/lib64/libagnssal.so:system/lib64/libagnssal.so \
+        $(LOCAL_PATH)/lib64/libbalong-ril.so:system/lib64/libbalong-ril.so \
+        $(LOCAL_PATH)/lib64/libbalong-ril-1.so:system/lib64/libbalong-ril-1.so \
+        $(LOCAL_PATH)/lib64/libconn_factory_test.so:system/lib64/libconn_factory_test.so \
+        $(LOCAL_PATH)/lib64/libgnssadapter.so:system/lib64/libgnssadapter.so \
+        $(LOCAL_PATH)/lib64/libhisi_efuse.so:system/lib64/libhisi_efuse.so \
+        $(LOCAL_PATH)/lib64/libHisiEncClientDll.so:system/lib64/libHisiEncClientDll.so \
+        $(LOCAL_PATH)/lib64/libHiSiUEAgent.so:system/lib64/libHiSiUEAgent.so \
+        $(LOCAL_PATH)/lib64/libhsa_common.so:system/lib64/libhsa_common.so \
+        $(LOCAL_PATH)/lib64/libhsa_configprocess.so:system/lib64/libhsa_configprocess.so \
+        $(LOCAL_PATH)/lib64/libhsa_hdlc.so:system/lib64/libhsa_hdlc.so \
+        $(LOCAL_PATH)/lib64/libhsa_msgprocess.so:system/ \
+        $(LOCAL_PATH)/lib64/liboeminfo.so:system/lib64/liboeminfo.so \
+        $(LOCAL_PATH)/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
+        $(LOCAL_PATH)/lib64/libril.so:system/lib64/libril.so \
+        $(LOCAL_PATH)/lib64/librilutils.so:system/lib64/librilutils.so \
 
 # Sensors
 PRODUCT_COPY_FILES += \
