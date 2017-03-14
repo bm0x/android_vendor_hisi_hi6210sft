@@ -88,3 +88,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/vendor/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so \
+
+# SurfaceFlinger
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/libsurfaceflinger.so:system/lib64/libsurfaceflinger.so \
+        $(LOCAL_PATH)/lib64/libsurfaceflinger_ddmconnection.so:system/lib64/libsurfaceflinger_ddmconnection.so \
