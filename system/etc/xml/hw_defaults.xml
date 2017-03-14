@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources>
+    <!--******************************** 1.PROTOCOL TEAM BEGIN -->
+    <!-- BEGIN PN:DTS2016071504771, deleted by wx277906, 2016/07/15 -->
+    <!--******************************** 1.PROTOCOL TEAM END -->
+    <!--******************************** 2.APP MANUFACTURE TEAM BEGIN -->
+
+    <!--******************************** 2.APP MANUFACTURE TEAM END -->
+    <!--******************************** 3.BASEAPP TEAM BEGIN -->
+    <fraction brightness_threshold="12%"/>
+    <fraction settings.global.convert_brightnesss_factor="320%"/>
+    <integer settings.global.wifi_sleep_policy="1"/>
+    <integer settings.system.glove_file_node="0" />
+    <integer settings.system.screen_brightness_mode="1"/>
+    <integer settings.system.screen_brightness="128"/>
+    <integer show_mms_expired_status="1"/>
+    <integer hw_vibrate_on="1"/>
+    <integer vibrate_on_message="1"/>
+    <integer vibrate_when_ringing="1"/>
+    <!-- BEGIN PN:DTS2015112305290, Deleted by wx323431, 2016/02/04 -->
+    <!-- END PN:DTS2015112305290, Deleted by wx323431, 2016/02/04 -->
+    <string hw_def_theme="/system/themes/Default.hwt"/>
+    <!-- BEGIN PN:DTS2015110506344, Added by wx238508, 2015/11/06 -->
+    <string settings.global.window_animation_scale="0.5"/>
+    <string settings.global.transition_animation_scale="0.5"/>
+    <!-- END PN:DTS2015110506344, Added by wx238508, 2015/11/06 -->
+    <!-- BEGIN PN:DTS2015112402662, Added by wx238508, 2015/11/24 -->
+    <integer has_encryption="1" reset="true"/>
+    <!-- END PN:DTS2015112402662, Added by wx238508, 2015/11/24 -->
+    <!-- BEGIN   PN: DTS2015113007531   , Modify by hwx212838, 2015/11/30 -->
+    <integer eapsim_view_removed="1"/>
+    <!-- END   PN: DTS2015113007531   , Modify by hwx212838, 2015/11/30 -->
+    <!-- BEGIN   PN: DTS2015122600614   , Modify by hwx212838, 2016/1/7 -->
+    <integer has_pgps_config="1"/>
+    <integer settings.global.quick_gps_switch="0"/>
+    <!-- END   PN: DTS2015122600614   , Modify by hwx212838, 2016/1/7 -->
+    <!-- BEGIN PN:DTS2016020505344, Added by WX206033, 2016/02/26 -->
+    <integer hw_default_support_call_barring="1"/>
+    <!-- END PN:DTS2016020505344, Added by WX206033, 2016/02/26 -->
+    <!-- BEGIN PN:DTS2016031500621,Added by lWX285236, 2016/03/15 -->
+    <string custom_certify_picture="" reset="true" />
+    <!-- END   PN:DTS2016031500621,Added by lWX285236, 2016/03/15 -->
+    <!--BEGIN PN: DTS2016112102299 Added by jwx341103 2016/11/22-->
+    <integer  settings.secure.doze_enabled="0" />
+    <!--END PN: DTS2016112102299 Added by jwx341103 2016/11/22-->
+    <!--******************************** 3.BASEAPP TEAM END -->
+    <!--******************************** 4.MULTI-MEDIA TEAM BEGIN -->
+    <!-- BEGIN PN:DTS2015122207859, Added by dwx238744, 2015/12/25 -->
+    <integer fingersense_smartshot_enabled="0" />
+    <!-- END PN:DTS2015122207859, Added by dwx238744, 2015/12/25 -->
+    <integer dts_mode="3"/>
+    <!--******************************** 4.MULTI-MEDIA TEAM END -->
+    <!--******************************** 5.FRAMEWORK TEAM BEGIN -->
+    <integer oomadj.com.android.externalstorage="5"/>
+    <string apps_set_oomadj="com.android.externalstorage"/>
+    <integer user_power_tip="1"/>
+    <!--******************************** 5.FRAMEWORK TEAM END -->
+    <!--******************************** 6.DATA SERVICE TEAM BEGIN -->
+
+    <!--******************************** 6.DATA SERVICE TEAM END -->
+    <!--******************************** 7.APPLET TEAM BEGIN -->
+
+    <!--******************************** 7.APPLET TEAM END -->
+    <!--******************************** 8.CUSTOM TEAM BEGIN -->
+
+    <!--******************************** 8.CUSTOM TEAM END -->
+</resources>

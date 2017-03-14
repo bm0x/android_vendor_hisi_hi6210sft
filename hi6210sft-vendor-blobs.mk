@@ -230,3 +230,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib64/libwifi_factory_test_hi110x.so:system/lib64/libwifi_factory_test_hi110x.so \
 	$(LOCAL_PATH)/lib64/libwifipro.so:system/lib64/libwifipro.so \
 	$(LOCAL_PATH)/lib64/libwpa_client_hisi.so:system/lib64/libwpa_client_hisi.so \
+
+# Huawei XML
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/xml/hw_defaults.xml:system/etc/xml/hw_defaults.xml \
+        $(LOCAL_PATH)/etc/xml/hw_easywakeupmotion_config.xml:system/etc/xml/hw_easywakeupmotion_config.xml \
+        $(LOCAL_PATH)/etc/xml/hw_launcher_default_config.xml:system/etc/xml/hw_launcher_default_config.xml \
+        $(LOCAL_PATH)/etc/xml/hw_launcher_default_workspace_simpleui.xml:system/etc/xml/hw_launcher_default_workspace_simpleui.xml \
+        $(LOCAL_PATH)/etc/xml/mms_config.xml:system/etc/xml/mms_config.xml \
+        $(LOCAL_PATH)/etc/xml/power_profile.xml:system/etc/xml/power_profile.xml \
