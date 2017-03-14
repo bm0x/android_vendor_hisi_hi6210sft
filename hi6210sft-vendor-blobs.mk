@@ -68,3 +68,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/vendor/lib64/libbt-vendor-hi110x.so:system/vendor/lib64/libbt-vendor-hi110x.so \
+
+# Connectivities
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/firmware,system/vendor/firmware)
