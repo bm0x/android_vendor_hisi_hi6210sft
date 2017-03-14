@@ -235,6 +235,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib64/libwifipro.so:system/lib64/libwifipro.so \
 	$(LOCAL_PATH)/lib64/libwpa_client_hisi.so:system/lib64/libwpa_client_hisi.so \
 
+# WvStream
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+        $(LOCAL_PATH)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+        $(LOCAL_PATH)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+
 # Huawei XML
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/xml/hw_defaults.xml:system/etc/xml/hw_defaults.xml \
