@@ -77,6 +77,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/usr/keylayout,system/usr/keylayout)
 
+# NFC
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/libnfc-brcm-alice.conf:system/etc/ibnfc-brcm.conf \
+        $(LOCAL_PATH)/etc/libnfc-nxp-alice.conf:system/etc/libnfc-nxp.conf \
+        $(LOCAL_PATH)/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/hw/nfc_nci.pn54x.default.so:system/lib64/hw/nfc_nci.pn54x.default.so
+
+# NFC: add Broadcom firmware from Nexus 10 aka "Samsung Manta"
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/vendor/firmware/bcm2079x_firmware.ncd:system/vendor/firmware/bcm2079x_firmware.ncd \
+        $(LOCAL_PATH)/vendor/firmware/bcm2079x_pre_firmware.ncd:system/vendor/ firmware/bcm2079x_pre_firmware.ncd\
+
 # Sensors
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/hw/sensorcaps.default.so:system/lib/hw/sensorcaps.default.so \
