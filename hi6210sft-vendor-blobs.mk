@@ -206,6 +206,11 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib64/libsurfaceflinger.so:system/lib64/libsurfaceflinger.so \
         $(LOCAL_PATH)/lib64/libsurfaceflinger_ddmconnection.so:system/lib64/libsurfaceflinger_ddmconnection.so \
 
+# Thermald
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/thermald.xml:system/etc/thermald.xml \
+        $(LOCAL_PATH)/etc/thermald_performance.xml:system/etc/thermald_performance.xml \
+
 # Wifi
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/wifi,system/etc/wifi) \
