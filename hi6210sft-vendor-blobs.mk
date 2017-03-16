@@ -1,4 +1,4 @@
-LOCAL_PATH := vendor/huawei/alice/system
+LOCAL_PATH := vendor/hisi/hi6210sft/system
 
 # Audio
 PRODUCT_COPY_FILES += \
