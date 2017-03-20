@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib/hw/audio.primary.hi6210sft.so:system/lib/hw/audio.primary.hi6210sft.so \
         $(LOCAL_PATH)/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
+        $(LOCAL_PATH)/lib/hw/hw_af_extend.default.so:system/lib/hw/hw_af_extend.default.so \
         $(LOCAL_PATH)/lib/libaudioalgoservice_jni.so:system/lib/libaudioalgoservice_jni.so \
         $(LOCAL_PATH)/lib/libaudio_custom.so:system/lib/libaudio_custom.so \
         $(LOCAL_PATH)/lib/libaudioflinger.huawei.so:system/lib/libaudioflinger.hauwei.so \
