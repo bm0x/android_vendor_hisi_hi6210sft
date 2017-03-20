@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib64/hw/audio.primary.hi6210sft.so:system/lib64/hw/audio.primary.hi6210sft.so \
         $(LOCAL_PATH)/lib64/hw/audio.r_submix.default.so:system/lib64/hw/audio.r_submix.default.so \
+        $(LOCAL_PATH)/lib64/libaudioroute.so:system/lib/libaudioroute.so \
         $(LOCAL_PATH)/lib64/libbalong_audio_ril.so:system/lib64/libbalong_audio_ril.so \
         $(LOCAL_PATH)/lib64/libearpa.so:system/lib64/libearpa.so \
         $(LOCAL_PATH)/lib64/libmax98925.so:system/lib64/libmax98925.so \
