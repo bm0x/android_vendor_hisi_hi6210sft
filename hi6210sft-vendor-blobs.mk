@@ -196,7 +196,7 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib64/libhsa_common.so:system/lib64/libhsa_common.so \
         $(LOCAL_PATH)/lib64/libhsa_configprocess.so:system/lib64/libhsa_configprocess.so \
         $(LOCAL_PATH)/lib64/libhsa_hdlc.so:system/lib64/libhsa_hdlc.so \
-        $(LOCAL_PATH)/lib64/libhsa_msgprocess.so:system/libhsa_msgprocess.so \
+        $(LOCAL_PATH)/lib64/libhsa_msgprocess.so:system/lib64/libhsa_msgprocess.so \
         $(LOCAL_PATH)/lib64/liboeminfo.so:system/lib64/liboeminfo.so \
         $(LOCAL_PATH)/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
         $(LOCAL_PATH)/lib64/libril.so:system/lib64/libril.so \
